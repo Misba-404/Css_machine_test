@@ -1,25 +1,102 @@
 <!doctype html>
 <html>
   <head>
-    <title>Login</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Question 3</title>
+
+    <style>
+      body {
+        display: flex;
+        margin: 0;
+        height: 100vh;
+      }
+
+      .box1 {
+        width: 50%;
+        padding-top: 140px;
+        box-sizing: border-box;
+        background: white;
+      }
+
+      .box2 {
+        width: 50%;
+        height: 100vh;
+        background: linear-gradient(to bottom, #d3b3e0, #dccbdf 55%, #f2e398);
+      }
+
+      .infobox {
+        width: 100%;
+        max-width: 800px;
+        padding: 25px;
+        box-sizing: border-box;
+      }
+
+      h2 {
+        color: #c96f5d;
+        font-family: Arial;
+        font-size: 40px;
+        margin: 0 0 20px;
+      }
+
+      label {
+        font-size: larger;
+        font-family: sans-serif;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        height: 38px;
+        padding: 6px 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        height: 42px;
+        margin-top: 20px;
+        color: white;
+        background: #c96f5d;
+        border: none;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .box2 {
+          display: none;
+        }
+
+        .box1 {
+          width: 100%;
+          padding: 20px;
+        }
+      }
+    </style>
   </head>
-  <style>
-    
-  </style>
+
   <body>
-    <div class="login">
-      <h2>Login Form</h2>
+    <div class="box2"></div>
 
-      <label>Email:</label>
-      <input type="text" />
+    <div class="box1">
+      <div class="infobox">
+        <h2>Login Form</h2>
 
-      <label>Password:</label>
-      <input type="password" />
+        <form>
+          <label for="Email"><b>Email:</b></label
+          ><br />
+          <input type="email" id="Email" required />
 
-      <input type="checkbox" /> Remember Me
+          <label for="Password"><b>Password:</b></label
+          ><br />
+          <input type="password" id="Password" required />
 
-      <button>Login</button>
+          <input type="checkbox" id="Check" />
+          <label for="Check">Remember me</label><br />
+
+          <input type="submit" value="Login" />
+        </form>
+      </div>
     </div>
   </body>
 </html>
